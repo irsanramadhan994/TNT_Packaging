@@ -1,0 +1,142 @@
+D:\Biocov\Biocov\Biocov\bin\Debug\Biocov.exe
+D:\Biocov\Biocov\Biocov\bin\Debug\Biocov.pdb
+D:\Biocov\Biocov\Biocov\obj\Debug\ResolveAssemblyReference.cache
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.Dashboard.resources
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.Properties.Resources.resources
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.csproj.GenerateResource.Cache
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.exe
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.pdb
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.ListBatch.resources
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.GenerateCode.resources
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.Modals.resources
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.CartonValidation.resources
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.CartonVialValidation.resources
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.Config.resources
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.Decomision.resources
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.Log.resources
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.Login.resources
+D:\Biocov\Biocov\Biocov\bin\Debug\Microsoft.PointOfService.dll
+D:\Biocov\Biocov\Biocov\bin\Debug\Biocov.exe.manifest
+D:\Biocov\Biocov\Biocov\bin\Debug\Biocov.application
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.exe.manifest
+D:\Biocov\Biocov\Biocov\obj\Debug\Biocov.application
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\ResolveAssemblyReference.cache
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.CartonValidation.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.CartonVialValidation.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.Config.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.Dashboard.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.Decomision.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.GenerateCode.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.ListBatch.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.Log.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.Login.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.Modals.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.Properties.Resources.resources
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.csproj.GenerateResource.Cache
+D:\Biocov\dd\Biocov\Biocov\bin\Debug\Biocov.exe.manifest
+D:\Biocov\dd\Biocov\Biocov\bin\Debug\Biocov.application
+D:\Biocov\dd\Biocov\Biocov\bin\Debug\Biocov.exe
+D:\Biocov\dd\Biocov\Biocov\bin\Debug\Biocov.pdb
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.exe.manifest
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.application
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.exe
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.pdb
+D:\Biocov\dd\Biocov\Biocov\bin\Debug\System.Data.SQLite.dll
+D:\Biocov\dd\Biocov\Biocov\bin\Debug\System.Data.SQLite.xml
+D:\Biocov\dd\Biocov\Biocov\obj\Debug\Biocov.Comissioning.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.exe
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.pdb
+D:\Biocov\dd\Biocov2\Biocov\bin\Debug\Biocov.exe.manifest
+D:\Biocov\dd\Biocov2\Biocov\bin\Debug\Biocov.application
+D:\Biocov\dd\Biocov2\Biocov\bin\Debug\Biocov.exe
+D:\Biocov\dd\Biocov2\Biocov\bin\Debug\Biocov.pdb
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\ResolveAssemblyReference.cache
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.CartonValidation.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.CartonVialValidation.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.Comissioning.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.Config.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.Dashboard.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.Decomision.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.GenerateCode.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.ListBatch.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.Log.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.Login.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.Modals.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.Properties.Resources.resources
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.csproj.GenerateResource.Cache
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.exe.manifest
+D:\Biocov\dd\Biocov2\Biocov\obj\Debug\Biocov.application
+D:\Biocov3\Biocov\obj\Debug\Biocov.exe
+D:\Biocov3\Biocov\obj\Debug\Biocov.pdb
+D:\Biocov3\Biocov\bin\Debug\Biocov.exe.manifest
+D:\Biocov3\Biocov\bin\Debug\Biocov.application
+D:\Biocov3\Biocov\bin\Debug\Biocov.exe
+D:\Biocov3\Biocov\bin\Debug\Biocov.pdb
+D:\Biocov3\Biocov\bin\Debug\Microsoft.PointOfService.dll
+D:\Biocov3\Biocov\obj\Debug\ResolveAssemblyReference.cache
+D:\Biocov3\Biocov\obj\Debug\Biocov.CartonValidation.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.CartonVialValidation.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.Comissioning.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.Config.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.Dashboard.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.Decomision.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.GenerateCode.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.ListBatch.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.Log.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.Login.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.Modals.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.Properties.Resources.resources
+D:\Biocov3\Biocov\obj\Debug\Biocov.csproj.GenerateResource.Cache
+D:\Biocov3\Biocov\obj\Debug\Biocov.exe.manifest
+D:\Biocov3\Biocov\obj\Debug\Biocov.application
+D:\Biocov3\Biocov\obj\Debug\Biocov.Calibration.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.exe
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.pdb
+C:\Program Files\Biocov3\Biocov\bin\Debug\Biocov.exe.manifest
+C:\Program Files\Biocov3\Biocov\bin\Debug\Biocov.application
+C:\Program Files\Biocov3\Biocov\bin\Debug\Biocov.exe
+C:\Program Files\Biocov3\Biocov\bin\Debug\Biocov.pdb
+C:\Program Files\Biocov3\Biocov\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Calibration.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.CartonValidation.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.CartonVialValidation.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Comissioning.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Config.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Dashboard.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Decomision.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.GenerateCode.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.ListBatch.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Log.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Login.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Modals.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Properties.Resources.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.csproj.GenerateResource.Cache
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.exe.manifest
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.application
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Dbconf.resources
+C:\Program Files\Biocov3\Biocov\obj\Debug\Biocov.Cartoning.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.exe
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.pdb
+C:\Program Files\Biocov\Biocov\bin\Debug\Biocov.exe.manifest
+C:\Program Files\Biocov\Biocov\bin\Debug\Biocov.application
+C:\Program Files\Biocov\Biocov\bin\Debug\Biocov.exe
+C:\Program Files\Biocov\Biocov\bin\Debug\Biocov.pdb
+C:\Program Files\Biocov\Biocov\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Calibration.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Cartoning.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.CartonValidation.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.CartonVialValidation.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Comissioning.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Config.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Dashboard.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Dbconf.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Decomision.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.GenerateCode.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.ListBatch.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Log.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Login.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Modals.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Properties.Resources.resources
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.csproj.GenerateResource.Cache
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.exe.manifest
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.application

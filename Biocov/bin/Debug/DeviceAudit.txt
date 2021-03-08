@@ -1,0 +1,234 @@
+Device
+ DeviceName: \\?\HID#BtIaHidDevice#9&a2f918f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+ DeviceType: HID
+ DeviceHandle: 1002C
+ Name: HID-compliant consumer control device
+
+DeviceInfo
+ Size: 32
+ Type: 2
+
+DeviceInfoKeyboard
+ Type: 65259
+ SubType: 57071
+ KeyboardMode: 256
+ NumberOfFunctionKeys: 65548
+ NumberOfIndicators 0
+ NumberOfKeysTotal: 0
+
+HidInfo
+ VendorID: 65259
+ ProductID: 57071
+ VersionNumber: 256
+ UsagePage: 12
+ Usage: 1
+
+=========================================================================================================
+Device
+ DeviceName: \\?\HID#{00001124-0000-1000-8000-00805f9b34fb}_VID&000105d6_PID&000a&Col02#9&2eeb03&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+ DeviceType: HID
+ DeviceHandle: 1002A
+ Name: HID-compliant consumer control device
+
+DeviceInfo
+ Size: 32
+ Type: 2
+
+DeviceInfoKeyboard
+ Type: 1494
+ SubType: 10
+ KeyboardMode: 0
+ NumberOfFunctionKeys: 65548
+ NumberOfIndicators 0
+ NumberOfKeysTotal: 0
+
+HidInfo
+ VendorID: 1494
+ ProductID: 10
+ VersionNumber: 0
+ UsagePage: 12
+ Usage: 1
+
+=========================================================================================================
+Device
+ DeviceName: \\?\HID#{00001124-0000-1000-8000-00805f9b34fb}_VID&000105d6_PID&000a&Col01#9&2eeb03&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+ DeviceType: HID
+ DeviceHandle: 100A9
+ Name: HID-compliant consumer control device
+
+DeviceInfo
+ Size: 32
+ Type: 2
+
+DeviceInfoKeyboard
+ Type: 1494
+ SubType: 10
+ KeyboardMode: 0
+ NumberOfFunctionKeys: 65548
+ NumberOfIndicators 0
+ NumberOfKeysTotal: 0
+
+HidInfo
+ VendorID: 1494
+ ProductID: 10
+ VersionNumber: 0
+ UsagePage: 12
+ Usage: 1
+
+=========================================================================================================
+Device
+ DeviceName: \\?\HID#VID_046D&PID_C534&MI_00#8&2b2f70fd&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}
+ DeviceType: KEYBOARD
+ DeviceHandle: 300A7
+ Name: HID Keyboard Device
+
+DeviceInfo
+ Size: 32
+ Type: 1
+
+DeviceInfoKeyboard
+ Type: 81
+ SubType: 0
+ KeyboardMode: 1
+ NumberOfFunctionKeys: 12
+ NumberOfIndicators 3
+ NumberOfKeysTotal: 173
+
+HidInfo
+ VendorID: 81
+ ProductID: 0
+ VersionNumber: 1
+ UsagePage: 12
+ Usage: 0
+
+=========================================================================================================
+Device
+ DeviceName: \\?\HID#VID_046D&PID_C534&MI_01&Col05#8&17ff54bf&0&0004#{4d1e55b2-f16f-11cf-88cb-001111000030}
+ DeviceType: HID
+ DeviceHandle: 100A1
+ Name: HID-compliant device
+
+DeviceInfo
+ Size: 32
+ Type: 2
+
+DeviceInfoKeyboard
+ Type: 1133
+ SubType: 50484
+ KeyboardMode: 10497
+ NumberOfFunctionKeys: 196352
+ NumberOfIndicators 0
+ NumberOfKeysTotal: 0
+
+HidInfo
+ VendorID: 1133
+ ProductID: 50484
+ VersionNumber: 10497
+ UsagePage: 65280
+ Usage: 2
+
+=========================================================================================================
+Device
+ DeviceName: \\?\HID#VID_046D&PID_C534&MI_01&Col04#8&17ff54bf&0&0003#{4d1e55b2-f16f-11cf-88cb-001111000030}
+ DeviceType: HID
+ DeviceHandle: 2009F
+ Name: HID-compliant device
+
+DeviceInfo
+ Size: 32
+ Type: 2
+
+DeviceInfoKeyboard
+ Type: 1133
+ SubType: 50484
+ KeyboardMode: 10497
+ NumberOfFunctionKeys: 130816
+ NumberOfIndicators 0
+ NumberOfKeysTotal: 0
+
+HidInfo
+ VendorID: 1133
+ ProductID: 50484
+ VersionNumber: 10497
+ UsagePage: 65280
+ Usage: 1
+
+=========================================================================================================
+Device
+ DeviceName: \\?\HID#VID_046D&PID_C534&MI_01&Col02#8&17ff54bf&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}
+ DeviceType: HID
+ DeviceHandle: 1009D
+ Name: HID-compliant consumer control device
+
+DeviceInfo
+ Size: 32
+ Type: 2
+
+DeviceInfoKeyboard
+ Type: 1133
+ SubType: 50484
+ KeyboardMode: 10497
+ NumberOfFunctionKeys: 65548
+ NumberOfIndicators 0
+ NumberOfKeysTotal: 0
+
+HidInfo
+ VendorID: 1133
+ ProductID: 50484
+ VersionNumber: 10497
+ UsagePage: 12
+ Usage: 1
+
+=========================================================================================================
+Device
+ DeviceName: \\?\Root#RDP_KBD#0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}
+ DeviceType: KEYBOARD
+ DeviceHandle: 1003F
+ Name: Terminal Server Keyboard Driver
+
+DeviceInfo
+ Size: 32
+ Type: 1
+
+DeviceInfoKeyboard
+ Type: 81
+ SubType: 0
+ KeyboardMode: 1
+ NumberOfFunctionKeys: 12
+ NumberOfIndicators 3
+ NumberOfKeysTotal: 101
+
+HidInfo
+ VendorID: 81
+ ProductID: 0
+ VersionNumber: 1
+ UsagePage: 12
+ Usage: 0
+
+=========================================================================================================
+Device
+ DeviceName: \\?\ACPI#PNP0303#4&35d04da6&0#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}
+ DeviceType: KEYBOARD
+ DeviceHandle: B003D
+ Name: Standard PS/2 Keyboard
+
+DeviceInfo
+ Size: 32
+ Type: 1
+
+DeviceInfoKeyboard
+ Type: 7
+ SubType: 0
+ KeyboardMode: 1
+ NumberOfFunctionKeys: 12
+ NumberOfIndicators 3
+ NumberOfKeysTotal: 101
+
+HidInfo
+ VendorID: 7
+ ProductID: 0
+ VersionNumber: 1
+ UsagePage: 12
+ Usage: 0
+
+=========================================================================================================

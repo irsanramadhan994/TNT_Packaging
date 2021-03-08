@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Biocov.CartonValidation" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9XQCIpQAAiEzExRQQgCAygQSAAg4IRSMEHgFAYJgACA=</HashCode>
+      <FileName>CartonValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.CartonVialValidation" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/TQDIhBQACEyEZBQQgCASgBSAMk4JRAsEDhAAQBAIAA=</HashCode>
+      <FileName>CartonVialValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Config" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cBQDKBEQACAyAhAAQACgBAQCCAgIJAAEQEBBUQBAICQ=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Dashboard" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAyBQEACASEBFAQBCAAAQCAAAwMAAFADgAQQBAIQQ=</HashCode>
+      <FileName>Dashboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.db" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAICAABRBYEAAAQIBRAAAUAIAgCBgAEABDAEAAg=</HashCode>
+      <FileName>db.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Decomision" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0DSCIDQSASEyUBDSQlGAQgxSoPgzAAAusOgJAQBBBaQ=</HashCode>
+      <FileName>Decomision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.generate" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAQAAAAAAAQQAIQAAEAEAAoAAAAAAAABAE=</HashCode>
+      <FileName>generate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.GenerateCode" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kLQHIBQSACAwEBhwAgCACAATEAg4IAQoWHgACQBAAAE=</HashCode>
+      <FileName>GenerateCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.ListBatch" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAEAAAyAAAJBAAACAAAACAAghAAAAACAAAQAECAA=</HashCode>
+      <FileName>ListBatch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Log" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAAABFAAACACAACAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Log.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Login" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAEABACAQABIAAACAACASAIAAAgAAABAAAQBAAAg=</HashCode>
+      <FileName>Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Modals" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAKAAAAAAAACAAAASBMAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Printer" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Printer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Program" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.sqlite" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAxBAAAAAAAAAEAAAAAAAAAAAAABAAAECBg=</HashCode>
+      <FileName>sqlite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.tcp" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAQABAAAAAAIAAAAAAABAAAAACAAAAAAQ=</HashCode>
+      <FileName>tcp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Utility" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAEAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAEAAAAAAAAIBEAAAAQAAAAAAABBAABAEAYI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biocov.Properties.Settings" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RawInput_dll.DeviceType" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAEAAAAAAAAAgAAA=</HashCode>
+      <FileName>RawInput\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RawInput_dll.KeyMapper" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>RawInput\KeyMapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RawInput_dll.KeyPressEvent" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABEAAAAkAAAAAEAABAAAUAAAAAAAAAAAAIIAAAAAA=</HashCode>
+      <FileName>RawInput\KeyPressEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RawInput_dll.PreMessageFilter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RawInput\PreMessageFilter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RawInput_dll.RawInput" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAQAABABAAAAAAAAAAAAAAAIAwCAAAQABAAAA=</HashCode>
+      <FileName>RawInput\RawInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RawInput_dll.RawInputEventArg" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RawInput\RawInputEventArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RawInput_dll.RawKeyboard" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAABAAAAAEAAAQAAAAAABAAABAIAAABAAAA=</HashCode>
+      <FileName>RawInput\RawKeyboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RawInput_dll.RegistryAccess" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>RawInput\RegistryAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RawInput_dll.Win32" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AmRKEARCAgAEAAABAAEAAgABgCICLABDCUBAAggAACI=</HashCode>
+      <FileName>RawInput\Win32.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="RawInput_dll.DeviceInfo" Collapsed="true">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAAAAAAAAAAAgAAABQAAAAAAIAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.DeviceInfoMouse" Collapsed="true">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAAQAAAAAAAAEAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.DeviceInfoKeyboard" Collapsed="true">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAEAABEAAAAAAECAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.DeviceInfoHid" Collapsed="true">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAEAEAAAgAAAEAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.BroadcastDeviceInterface" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAIAAAAIAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.Rawinputdevicelist" Collapsed="true">
+    <Position X="5.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABAAAAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.RawData" Collapsed="true">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAgAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.InputData" Collapsed="true">
+    <Position X="9.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.Rawinputheader" Collapsed="true">
+    <Position X="7.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAUAAAAAAAAAQAAAABAAAAABAAAAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.Rawhid" Collapsed="true">
+    <Position X="2.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAECAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.Rawmouse" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASgAAAAAAAAAAAAABAAAAAAAAAIAAAABAAAgAAAAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.Rawkeyboard" Collapsed="true">
+    <Position X="9.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBBAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAIAAACAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RawInput_dll.RawInputDevice" Collapsed="true">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEAAAAACAEAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RawInput\DataStructures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="RawInput_dll.DataCommand" Collapsed="true">
+    <Position X="2.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RawInput\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RawInput_dll.RawInputDeviceInfo" Collapsed="true">
+    <Position X="0.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAACAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>RawInput\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RawInput_dll.BroadcastDeviceType" Collapsed="true">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAEAAAAAAAAAAAAAAAAABAAAAAACAAAAIACEAA=</HashCode>
+      <FileName>RawInput\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RawInput_dll.DeviceNotification" Collapsed="true">
+    <Position X="4" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAIAAAAAAAAEAAAA=</HashCode>
+      <FileName>RawInput\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RawInput_dll.RawInputDeviceFlags" Collapsed="true">
+    <Position X="9.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAARAAAAAEADQAoAIAAAAAACAAAAA=</HashCode>
+      <FileName>RawInput\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RawInput_dll.HidUsagePage" Collapsed="true">
+    <Position X="7.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAgAAAAAAAAAAQgCAAAAAAABAAAgAA=</HashCode>
+      <FileName>RawInput\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RawInput_dll.HidUsage" Collapsed="true">
+    <Position X="5.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAQIAAAIAAAAAQAAAQAAAACAAAAAAAAACAAAgACA=</HashCode>
+      <FileName>RawInput\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
