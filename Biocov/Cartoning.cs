@@ -159,7 +159,7 @@ namespace Biocov
                 field.Add("flag", "0");
                 field.Add("isreject", "0");
                 field.Add("substraction", substract.ToString());
-                if (db.update(field, "[vaccine_packaging]", "batchnumber='" + bnumber + "' AND innerboxgsoneid='" + tbCarton.Text + "'") > 0)
+                if (db.update(field, "[vaccine]", "batchnumber='" + bnumber + "' AND innerboxgsoneid='" + tbCarton.Text + "'") > 0)
                 {
                     Dictionary<string, string> syslog = new Dictionary<string, string>();
                     syslog.Add("eventType", "12");

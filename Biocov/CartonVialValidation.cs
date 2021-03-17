@@ -106,7 +106,7 @@ namespace Biocov
             lblFail1.Text = "0";
             lblPass2.Text = "0";
             lblFail2.Text = "0";
-            //_rawinput = new RawInput(Handle, CaptureOnlyInForeground);
+            _rawinput = new RawInput(Handle, CaptureOnlyInForeground);
             cbProduct1.DisplayMember = "Name";
             cbProduct1.ValueMember = "Value";
             cbProduct2.DisplayMember = "Name";
@@ -292,8 +292,8 @@ namespace Biocov
 
         private void CartonVialValidation_Load(object sender, EventArgs e)
         {
-            //_rawinput.KeyPressed += OnKeyPressed;
-            //_rawinput.AddMessageFilter();
+            _rawinput.KeyPressed += OnKeyPressed;
+            _rawinput.AddMessageFilter();
             dataGridView1.Enabled = false;
             dataGridView2.Enabled = false;
             config = sqlite.getConfig(lblUserId.Text);
@@ -301,9 +301,9 @@ namespace Biocov
             hidscanner2 = config["hidscanner2"];
             lblQty1.Text = table.Rows.Count.ToString();
             lblQty2.Text = table2.Rows.Count.ToString();
-            //tbCarton1.Enabled = false;
+            tbCarton1.Enabled = false;
             tbBatchnumber1.Enabled = false;
-            //tbVial1.Enabled = false;
+            tbVial1.Enabled = false;
             btStart1.Enabled = false;
             btEnd1.Enabled = false;
             tbBatchnumber2.Enabled = false;
@@ -435,7 +435,7 @@ namespace Biocov
             {
 
                 log.LogWriter("Scan GS1 ID Carton " + tbCarton1.Text + " Batchnumber " + tbBatchnumber1.Text + " Status Success");
-                //tbCarton1.Enabled = false;
+                tbCarton1.Enabled = false;
                 cartonvalidated = true;
                 foreach (string[] Row in dsinnerbox)
                 {
@@ -460,7 +460,7 @@ namespace Biocov
                 lblFail1.Text = vialvalidationLog.Count.ToString();
                 gs1carton1 = null;
                 tbCarton1.Text = "";
-                //tbCarton1.Enabled = false;
+                tbCarton1.Enabled = false;
             }
 
         }
@@ -499,7 +499,7 @@ namespace Biocov
                     lblFail1.Text = vialvalidationLog.Count.ToString();
                     gs1idvial1 = null;
                     tbVial1.Text = "";
-                    //tbVial1.Enabled = false;
+                    tbVial1.Enabled = false;
                     isvialvalid = false;
                     break;
 
@@ -522,7 +522,7 @@ namespace Biocov
                     cap2 = bnumber + guid.PadLeft(3, '0');
                 }
 
-                if (db.selectList(field, "[vaccine_packaging]", "gsonevialid='" + tbVial1.Text + "' AND batchnumber='" + bnumber + "'AND isreject='1' AND flag='2'") != null)
+                if (db.selectList(field, "[vaccine]", "gsonevialid='" + tbVial1.Text + "' AND batchnumber='" + bnumber + "'AND isreject='1' AND flag='2'") != null)
                 {
                     cap = cbProduct1.SelectedValue.ToString() + bnumber + guid.PadLeft(3, '0');
                     Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
@@ -538,14 +538,14 @@ namespace Biocov
                     lblQty1.Text = table.Rows.Count.ToString();
                     lblPass1.Text = agregation.Count.ToString();
                     tbVial1.Text = "";
-                    //tbVial1.Enabled = false;
+                    tbVial1.Enabled = false;
                     gs1idvial1 = null;
                     vialLog.Add(tbCarton1.Text + "&" + tbVial1.Text + "&" + "Success" + "&" + DateTime.Now.ToLongDateString() + "&" + DateTime.Now.ToLongTimeString());
 
 
                     if (agregation.Count == int.Parse(_comboProduct[cbProduct1.SelectedIndex].Qty))
                     {
-                        //tbVial1.Enabled = false;
+                        tbVial1.Enabled = false;
                         int i = 0;
                         string aggregationWhere = String.Join(",", agregation.ToArray());
                         if (db.aggregationVial(aggregationWhere, tbCarton1.Text, infeedid))
@@ -567,7 +567,7 @@ namespace Biocov
                             lblFail1.Text = "0";
                             lblQty1.Text = "0";
                             tbCarton1.Text = "";
-                            //tbCarton1.Enabled = false;
+                            tbCarton1.Enabled = false;
                             gs1carton1 = null;
                             gs1idvial1 = null;
                             cartonvalidated = false;
@@ -576,7 +576,7 @@ namespace Biocov
                         else
                         {
                             tbCarton1.Text = "";
-                            //tbCarton1.Enabled = false;
+                            tbCarton1.Enabled = false;
                             gs1carton1 = null;
                             gs1idvial1 = null;
                             cartonvalidated = false;
@@ -600,7 +600,7 @@ namespace Biocov
                     lblFail1.Text = vialvalidationLog.Count.ToString();
                     gs1idvial1 = null;
                     tbVial1.Text = "";
-                    //tbVial1.Enabled = false;
+                    tbVial1.Enabled = false;
 
                 }
 
@@ -609,7 +609,7 @@ namespace Biocov
             {
 
                 tbVial1.Text = "";
-                //tbVial1.Enabled = false;
+                tbVial1.Enabled = false;
                 gs1idvial1 = null;
 
             }
@@ -666,8 +666,8 @@ namespace Biocov
             lblPass1.Text = "0";
             lblFail1.Text = "0";
             btnLog1.Enabled = true;
-            //tbCarton1.Enabled = false;
-            //tbVial1.Enabled = false;
+            tbCarton1.Enabled = false;
+            tbVial1.Enabled = false;
             cbProduct1.Enabled = true;
             cbProduct1.SelectedIndex = 0;
             tbBatchnumber1.Text = "";
@@ -815,7 +815,7 @@ namespace Biocov
                 {
                     cap2 = bnumber2 + guid.PadLeft(3, '0');
                 }
-                if (db.selectList(field, "[vaccine_packaging]", "gsonevialid='" + tbVial2.Text + "' AND batchnumber='" + bnumber2 + "'AND isreject='1' AND flag='2'") != null)
+                if (db.selectList(field, "[vaccine]", "gsonevialid='" + tbVial2.Text + "' AND batchnumber='" + bnumber2 + "'AND isreject='1' AND flag='2'") != null)
                 {
                     cap = cbProduct2.SelectedValue.ToString() + bnumber2 + guid.PadLeft(3, '0');
                     Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;

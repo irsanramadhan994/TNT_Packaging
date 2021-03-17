@@ -266,7 +266,7 @@ namespace Biocov
             field2.Add("rejecttime", unixTimestamp.ToString());
             field2.Add("isreject", "2");
             fields.Add("innerboxgsoneid");
-            if (db.selectList(fields, "[vaccine_packaging]", "basketid is not null AND innerboxgsoneid='" + tbCarton.Text + "'") == null)
+            if (db.selectList(fields, "[vaccine]", "basketid is not null AND innerboxgsoneid='" + tbCarton.Text + "'") == null)
             {
                 if (db.update(field2, "[innerbox]", "gsoneinnerboxid='" + tbCarton.Text + "' AND batchnumber='" + bnumber + "' AND (isreject='0' OR isreject='1')") > 0)
                 {
@@ -292,7 +292,7 @@ namespace Biocov
                     field.Add("innerboxgsoneid", "NULL");
                     field.Add("isreject", "1");
                     field.Add("flag", "2");
-                    if (db.update(field, "[vaccine_packaging]", "innerboxgsoneid='" + tbCarton.Text + "' AND batchnumber='" + bnumber + "'") > 0)
+                    if (db.update(field, "[vaccine]", "innerboxgsoneid='" + tbCarton.Text + "' AND batchnumber='" + bnumber + "'") > 0)
                     {
                         notifMessage = "Decomission Success";
                         notifCaption = "Success";
@@ -425,7 +425,7 @@ namespace Biocov
 
             List<string> field = new List<string>();
             field.Add("gsonevialid 'GS1 Vial ID'");
-            List<string[]> dss = db.selectList(field, "[vaccine_packaging]", "innerboxgsoneid='" + tbCarton2.Text + "' AND batchnumber='" + bnumber + "'");
+            List<string[]> dss = db.selectList(field, "[vaccine]", "innerboxgsoneid='" + tbCarton2.Text + "' AND batchnumber='" + bnumber + "'");
             if (db.num_rows > 0)
             {
 
@@ -464,7 +464,7 @@ namespace Biocov
             field.Add("innerboxgsoneid", "NULL");
             field.Add("isreject", "2");
 
-            if (db.update(field, "[vaccine_packaging]", "gsonevialid='" + tbVial1.Text + "' AND batchnumber='" + bnumber + "'AND isreject='0'") > 0)
+            if (db.update(field, "[vaccine]", "gsonevialid='" + tbVial1.Text + "' AND batchnumber='" + bnumber + "'AND isreject='0'") > 0)
             {
                 Dictionary<string, string> field2 = new Dictionary<string, string>();
                 Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
@@ -487,7 +487,7 @@ namespace Biocov
 
                     List<string> fieldselect = new List<string>();
                     fieldselect.Add("gsonevialid 'GS1 Vial ID'");
-                    List<string[]> dss = db.selectList(fieldselect, "[vaccine_packaging]", "innerboxgsoneid='" + tbCarton2.Text + "' AND batchnumber='" + bnumber + "'");
+                    List<string[]> dss = db.selectList(fieldselect, "[vaccine]", "innerboxgsoneid='" + tbCarton2.Text + "' AND batchnumber='" + bnumber + "'");
                     if (db.num_rows > 0)
                     {
                         table2.Clear();

@@ -227,6 +227,16 @@ namespace Biocov
 
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Manual mn = new Manual();
+            mn.lblRole.Text = lblRole.Text;
+            mn.lblUserId.Text = lblUserId.Text;
+            mn.adminid = adminid;
+            mn.Show();
+            this.Hide();
+        }
+
 
   
     }

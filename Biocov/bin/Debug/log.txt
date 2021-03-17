@@ -37304,3 +37304,424 @@ Log Entry : 17:44:40 25 February 2021
   :
   :Aggregation GS1 ID Carton 01899495700190110TESTTEMP172108202116142485361117 Batchnumber TESTTEMP Status Success
 -------------------------------
+
+Log Entry : 08:16:23 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESTTEMP Status Fail
+-------------------------------
+
+Log Entry : 08:16:35 17 March 2021
+  :
+  :Scan GS1 ID Carton MA Batchnumber TESTTEMP Status Fail
+-------------------------------
+
+Log Entry : 08:16:52 17 March 2021
+  :
+  :Scan GS1 ID Carton LMENUBIFBACKOFARMA20203 Batchnumber TESTTEMP Status Fail
+-------------------------------
+
+Log Entry : 08:19:50 17 March 2021
+  :
+  :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Biocov.db.selectList(List`1 field, String table, String where) in C:\Program Files\Biocov\Biocov\db.cs:line 520
+-------------------------------
+
+Log Entry : 08:19:54 17 March 2021
+  :
+  :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Biocov.db.selectList(List`1 field, String table, String where) in C:\Program Files\Biocov\Biocov\db.cs:line 520
+-------------------------------
+
+Log Entry : 08:20:15 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 08:23:09 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: Invalid object name 'vaccine_packaging'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 08:23:28 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: Invalid object name 'vaccine_packaging'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 08:23:30 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: Invalid object name 'vaccine_packaging'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 08:23:31 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: Invalid object name 'vaccine_packaging'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 08:23:33 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: Invalid object name 'vaccine_packaging'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 08:29:46 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Vaccine__product__5A846E65". The conflict occurred in database "packaging_bt", table "dbo.product_model", column 'product_model'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 08:30:52 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Vaccine__product__5A846E65". The conflict occurred in database "packaging_bt", table "dbo.product_model", column 'product_model'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 08:30:52 17 March 2021
+  :
+  :Scan GS1 ID Carton LMENULMENULMENULMENULMENULCONTROLCLMENULMENU Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 08:33:54 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insert(Dictionary`2 field, String table) in C:\Program Files\Biocov\Biocov\db.cs:line 626
+-------------------------------
+
+Log Entry : 08:34:12 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insert(Dictionary`2 field, String table) in C:\Program Files\Biocov\Biocov\db.cs:line 626
+-------------------------------
+
+Log Entry : 08:35:26 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 08:35:54 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insert(Dictionary`2 field, String table) in C:\Program Files\Biocov\Biocov\db.cs:line 626
+-------------------------------
+
+Log Entry : 08:35:59 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Success
+-------------------------------
+
+Log Entry : 08:36:04 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 08:41:04 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 08:41:22 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Success
+-------------------------------
+
+Log Entry : 08:41:25 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 16:12:38 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, SqlConnection owningObject, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Biocov.db.OpenConnection() in C:\Program Files\Biocov\Biocov\db.cs:line 252
+-------------------------------
+
+Log Entry : 16:16:17 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 16:17:37 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 16:17:41 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 16:21:31 17 March 2021
+  :
+  :System.NullReferenceException: Object reference not set to an instance of an object.
+   at Biocov.db.selectList(List`1 field, String table, String where) in C:\Program Files\Biocov\Biocov\db.cs:line 520
+-------------------------------
+
+Log Entry : 16:22:02 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UQ__Vaccine__0F3C6F901FD7D8F9'. Cannot insert duplicate key in object 'dbo.vaccine'. The duplicate key value is (1615972921938794400).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 16:25:14 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Success
+-------------------------------
+
+Log Entry : 16:25:18 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Success
+-------------------------------
+
+Log Entry : 16:27:04 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Success
+-------------------------------
+
+Log Entry : 16:27:07 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: Violation of PRIMARY KEY constraint 'PK__Vaccine__161FB8407D5CD095'. Cannot insert duplicate key in object 'dbo.vaccine'. The duplicate key value is (1615973227390914600, ).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 16:27:10 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: Violation of PRIMARY KEY constraint 'PK__Vaccine__161FB8407D5CD095'. Cannot insert duplicate key in object 'dbo.vaccine'. The duplicate key value is (1615973230749513300, ).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 16:27:12 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: Violation of PRIMARY KEY constraint 'PK__Vaccine__161FB8407D5CD095'. Cannot insert duplicate key in object 'dbo.vaccine'. The duplicate key value is (1615973232308790200, ).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insertSelect(String expdate, String innerboxgsoneid, String productmodelid) in C:\Program Files\Biocov\Biocov\db.cs:line 379
+-------------------------------
+
+Log Entry : 16:29:47 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Success
+-------------------------------
+
+Log Entry : 16:31:26 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Success
+-------------------------------
+
+Log Entry : 16:32:32 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Success
+-------------------------------
+
+Log Entry : 16:32:36 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 16:32:39 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 16:32:51 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 16:39:42 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Success
+-------------------------------
+
+Log Entry : 16:39:44 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 16:39:51 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 17:00:41 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 17:01:01 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 17:01:58 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber TESSUBSTR Status Fail
+-------------------------------
+
+Log Entry : 17:07:11 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 17:14:27 17 March 2021
+  :
+  :System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, SqlConnection owningObject, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Biocov.db.OpenConnection() in C:\Program Files\Biocov\Biocov\db.cs:line 252
+-------------------------------
+
+Log Entry : 17:20:37 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 17:20:52 17 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 17:21:16 17 March 2021
+  :
+  :Scan GS1 ID Carton OEMSEMICOLONSPACE018994957000767105000055172212312116043907262140 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 17:21:35 17 March 2021
+  :
+  :Scan GS1 ID Carton OEMSEMICOLONSPACE018994957000767105000055172212312116043909668567 Batchnumber CTMAV504 Status Fail
+-------------------------------

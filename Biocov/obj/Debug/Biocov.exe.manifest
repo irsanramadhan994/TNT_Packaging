@@ -52,14 +52,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Biocov.exe" size="1075712">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Biocov.exe" size="1150976">
       <assemblyIdentity name="Biocov" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>sBA2jotVN9Jah4eIzcYSSRnjOFc=</dsig:DigestValue>
+        <dsig:DigestValue>9s09eeQ/8NwXx577WiYbyYykjVM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -87,13 +87,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Biocov.pdb" size="376320">
+  <file name="Biocov.pdb" size="419328">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>eqY7ga/ybauVYcpjMF3c90wKqGo=</dsig:DigestValue>
+      <dsig:DigestValue>089V4Vf05cZUjsLu2fdHZ1ZXsEg=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

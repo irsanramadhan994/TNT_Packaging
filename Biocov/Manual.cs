@@ -16,14 +16,14 @@ using System.Net;
 
 namespace Biocov
 {
-    public partial class CartonValidation : Form
+    public partial class Manual : Form
     {
-        DataTable table = new DataTable();
+       DataTable table = new DataTable();
         DataTable table2 = new DataTable();
         db db = new db();
         generate gnc = new generate();
         Logger logs = new Logger();
-        string bnumber,bnumber2,hidscanner,hidscanner2;
+        string bnumber,bnumber2,hidscanner,hidscanner2,expired,productmodelid;
         public string adminid,gs1carton1,gs1carton2;
         sqlite sqlite = new sqlite();
         Dictionary<string, string> config = new Dictionary<string, string>();
@@ -50,7 +50,7 @@ namespace Biocov
         List<string> validationLog = new List<string>();
         List<string> validationLog2 = new List<string>();
 
-        public CartonValidation()
+        public Manual()
         {
             InitializeComponent();
             isstart = false;
@@ -148,7 +148,7 @@ namespace Biocov
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbProduct1_SelectedIndexChanged(object sender, EventArgs e)
         {
             tbBatchnumber1.Enabled = true;
             tbBatchnumber1.Focus();
@@ -223,7 +223,7 @@ namespace Biocov
 
         }
 
-        private void CartonValidation_Load(object sender, EventArgs e)
+        private void Manual_Load(object sender, EventArgs e)
         {
             _rawinput.KeyPressed += OnKeyPressed;
             _rawinput.AddMessageFilter();
@@ -284,57 +284,40 @@ namespace Biocov
 
 
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (cbProduct1.SelectedIndex > 0)
-            {
 
-                if (tbBatchnumber1.Text.Length > 0)
-                {
-                    cbProduct1.Enabled = false;
-                    tbBatchnumber1.Enabled = false;
-                    btStart1.Enabled = false;
-                    btEnd1.Enabled = true;
-                    gnc.getPO(bnumber);
-                    isstart = true;
-                    btnLog.Enabled = false;
-
-                }
-                else
-                {
-                    MessageBox.Show("Silahkan Pilih Kolom Batch");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Silahkan Pilih Kolom Produk");
-            }
-
-        }
 
         private void cartonValidation() {
 
 
             List<string> field = new List<string>();
             field.Add("gsoneinnerboxid");
-            if (db.selectList(field, "[innerbox]", "gsoneinnerboxid='" + tbCarton1.Text + "' AND batchNumber='" + tbBatchnumber1.Text + "' AND isreject='1' AND flag='2'") != null)
+            if (db.selectList(field, "[innerbox]", "gsoneinnerboxid='" + tbCarton1.Text + "' AND batchNumber='" + tbBatchnumber1.Text + "' AND isreject='0' AND flag='0'") == null && tbCarton1.Text.Contains(tbBatchnumber1.Text))
             {
-                DataRow row = table.NewRow();
-                row[0] = tbCarton1.Text;
-                row[1] = "PASS";
-                row[2] = DateTime.Now.ToLongDateString();
-                row[3] = DateTime.Now.ToLongTimeString();
-                table.Rows.Add(row);
-                validationLog.Add(tbCarton1.Text + "&PASS" + "&" + DateTime.Now.ToLongDateString() + "&" + DateTime.Now.ToLongTimeString());
                 Dictionary<string, string> innerbox = new Dictionary<string, string>();
+                Dictionary<string, string> fieldvaccine = new Dictionary<string, string>();
                 innerbox.Add("isreject", "0");
                 innerbox.Add("flag", "0");
+                fieldvaccine.Add("batchnumber", bnumber);
+                fieldvaccine.Add("flag", "0");
+                fieldvaccine.Add("gsoneinnerboxid", tbCarton1.Text);
+                fieldvaccine.Add("isreject", "0");
+
                 if (isSas)
                 {
-                    if (db.update(innerbox, "[innerbox]", "batchnumber='" + bnumber + "' AND gsoneinnerboxid='" + tbCarton1.Text + "'") > 0)
+                    if (db.insert(fieldvaccine, "[innerbox]"))
                     {
-                        if (db.update(innerbox, "[vaccine]", "batchnumber='" + bnumber + "' AND innerboxgsoneid='" + tbCarton1.Text + "'") > 0)
+                        if (db.insertSelect(expired, tbCarton1.Text, productmodelid))
                         {
+
+                            DataRow row = table.NewRow();
+                            row[0] = tbCarton1.Text;
+                            row[1] = "PASS";
+                            row[2] = DateTime.Now.ToLongDateString();
+                            row[3] = DateTime.Now.ToLongTimeString();
+                            table.Rows.Add(row);
+                            validationLog.Add(tbCarton1.Text + "&PASS" + "&" + DateTime.Now.ToLongDateString() + "&" + DateTime.Now.ToLongTimeString());
+
+
                             Dictionary<string, string> syslog = new Dictionary<string, string>();
                             syslog.Add("eventType", "12");
                             syslog.Add("eventName", "Validation GS1 ID Carton " + tbCarton1.Text);
@@ -365,7 +348,15 @@ namespace Biocov
                 {
                     if (db.update(innerbox, "[innerbox]", "batchnumber='" + bnumber + "' AND gsoneinnerboxid='" + tbCarton1.Text + "'") > 0)
                     {
-                   
+                        DataRow row = table.NewRow();
+                        row[0] = tbCarton1.Text;
+                        row[1] = "PASS";
+                        row[2] = DateTime.Now.ToLongDateString();
+                        row[3] = DateTime.Now.ToLongTimeString();
+                        table.Rows.Add(row);
+                        validationLog.Add(tbCarton1.Text + "&PASS" + "&" + DateTime.Now.ToLongDateString() + "&" + DateTime.Now.ToLongTimeString());
+
+
                             Dictionary<string, string> syslog = new Dictionary<string, string>();
                             syslog.Add("eventType", "12");
                             syslog.Add("eventName", "Validation GS1 ID Carton " + tbCarton1.Text);
@@ -468,21 +459,7 @@ namespace Biocov
         }
 
 
-        private void textBox2_Click_1(object sender, EventArgs e)
-        {
-            using (var listbatch = new ListBatch("('" + cbProduct1.SelectedValue.ToString() + "')"))
-            {
-                var result = listbatch.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    bnumber = listbatch.batchNumber;
-                    tbBatchnumber1.Text = listbatch.batchNumber;
-                    btStart1.Enabled = true;
-                    lblQtyBatch1.Text = db.selectCountPass(bnumber).ToString();
-                    
-                }
-            }
-        }
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -492,14 +469,7 @@ namespace Biocov
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             
-                Dashboard dbd = new Dashboard();
-                dbd.lblRole.Text = lblRole.Text;
-                dbd.lblUserId.Text = lblUserId.Text;
-                dbd.adminid = adminid;
-                _rawinput.KeyPressed -= OnKeyPressed;
-                _rawinput.RemoveMessageFilter();
-                dbd.Show();
-                this.Hide();
+
 
         }
 
@@ -509,7 +479,7 @@ namespace Biocov
             log.Show();
         }
 
-        private void CartonValidation_FormClosed(object sender, FormClosedEventArgs e)
+        private void Manual_FormClosed(object sender, FormClosedEventArgs e)
         {
             _rawinput.KeyPressed -= OnKeyPressed;
             Application.Exit();
@@ -540,43 +510,10 @@ namespace Biocov
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tbCarton1.Text = "";
-            tbCarton1.Enabled = false;
-            btStart1.Enabled = false;
-            cbProduct1.Enabled = true;
-            cbProduct1.SelectedIndex = 0;
-            tbBatchnumber1.Text = "";
-            tbBatchnumber1.Enabled = false;
-            table.Rows.Clear();
-            dataGridView1.DataSource = table;
-            isstart = false;
-            btnLog.Enabled = true;
-            lblQty1.Text = "";
-            lblQtyBatch1.Text = "";
-            lblPass1.Text = "";
-            lblFail1.Text = "";
+ 
 
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblUserId_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRole_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_Click(object sender, EventArgs e)
-        {
-            gnc.getPO(bnumber);
-        }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
@@ -611,18 +548,7 @@ namespace Biocov
 
         private void textBox4_Click(object sender, EventArgs e)
         {
-            using (var listbatch = new ListBatch("('" + cbProduct2.SelectedValue.ToString() + "')"))
-            {
-                var result = listbatch.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    bnumber2 = listbatch.batchNumber;
-                    tbBatchnumber2.Text = listbatch.batchNumber;
-                    btStart2.Enabled = true;
-                    lblQtyBatch2.Text = db.selectCountPass(bnumber2).ToString();
 
-                }
-            }
         }
 
         private void button3_Click_1(object sender, EventArgs e)
@@ -636,7 +562,7 @@ namespace Biocov
                     tbBatchnumber2.Enabled = false;
                     btStart2.Enabled = false;
                     btEnd2.Enabled = true;
-                    gnc.getPO(bnumber);
+                    gnc.getPO(bnumber2);
                     istart2 = true;
                     btnLog2.Enabled = false;
                 }
@@ -653,32 +579,7 @@ namespace Biocov
 
         private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            tbBatchnumber2.Enabled = true;
-            List<string> field = new List<string>();
-            field.Add("isSas");
-            try
-            {
-                List<string[]> sas = db.selectList(field, "product_model", "product_model='" + cbProduct2.SelectedValue.ToString() + "'");
-                if (db.num_rows > 0)
-                {
-                    foreach (string[] Row in sas)
-                    {
-                        Console.WriteLine(Row[0]);
-                        if (Row[0] == "True")
-                        {
-                            isSas2 = true;
-                        }
-                        else
-                        {
-                            isSas2 = false;
-                        }
-                    }
-                }
-            }
-            catch (NullReferenceException ex)
-            {
-                Console.WriteLine(ex);
-            }
+            
 
         }
 
@@ -686,27 +587,34 @@ namespace Biocov
         {
 
             List<string> field = new List<string>();
-
             field.Add("gsoneinnerboxid");
-            if (db.selectList(field, "[innerbox]", "gsoneinnerboxid='" + tbCarton2.Text + "' AND batchNumber='" + tbBatchnumber2.Text + "' AND isreject='1' AND flag='2'") != null)
+            if (db.selectList(field, "[innerbox]", "gsoneinnerboxid='" + tbCarton2.Text + "' AND batchNumber='" + tbBatchnumber2.Text + "' AND isreject='0' AND flag='0'") == null && tbCarton2.Text.Contains(tbBatchnumber2.Text))
             {
-                DataRow row = table2.NewRow();
-                row[0] = tbCarton2.Text;
-                row[1] = "PASS";
-                row[2] = DateTime.Now.ToLongDateString();
-                row[3] = DateTime.Now.ToLongTimeString();
-                table2.Rows.Add(row);
-                validationLog2.Add(tbCarton1.Text + "&PASS" + "&" + DateTime.Now.ToLongDateString() + "&" + DateTime.Now.ToLongTimeString());
                 Dictionary<string, string> innerbox = new Dictionary<string, string>();
+                Dictionary<string, string> fieldvaccine = new Dictionary<string, string>();
                 innerbox.Add("isreject", "0");
                 innerbox.Add("flag", "0");
+                fieldvaccine.Add("batchnumber", bnumber2);
+                fieldvaccine.Add("flag", "0");
+                fieldvaccine.Add("gsoneinnerboxid", tbCarton2.Text);
+                fieldvaccine.Add("isreject", "0");
+
                 if (isSas2)
                 {
-                    if (db.update(innerbox, "[innerbox]", "batchnumber='" + bnumber2 + "' AND gsoneinnerboxid='" + tbCarton2.Text + "'") > 0)
+                    if (db.insert(fieldvaccine, "[innerbox]"))
                     {
-                        if (db.update(innerbox, "[vaccine]", "batchnumber='" + bnumber2 + "' AND innerboxgsoneid='" + tbCarton2.Text + "'") > 0)
+                        if (db.insertSelect(expired, tbCarton2.Text, productmodelid))
                         {
-                            logs.LogWriter("Scan GS1 ID Carton " + tbCarton2.Text + " Batchnumber " + tbBatchnumber2.Text + " Status Success");
+
+                            DataRow row = table2.NewRow();
+                            row[0] = tbCarton2.Text;
+                            row[1] = "PASS";
+                            row[2] = DateTime.Now.ToLongDateString();
+                            row[3] = DateTime.Now.ToLongTimeString();
+                            table2.Rows.Add(row);
+                            validationLog.Add(tbCarton2.Text + "&PASS" + "&" + DateTime.Now.ToLongDateString() + "&" + DateTime.Now.ToLongTimeString());
+
+
                             Dictionary<string, string> syslog = new Dictionary<string, string>();
                             syslog.Add("eventType", "12");
                             syslog.Add("eventName", "Validation GS1 ID Carton " + tbCarton2.Text);
@@ -714,21 +622,21 @@ namespace Biocov
                             syslog.Add("uom", "Carton");
                             syslog.Add("userid", adminid);
                             db.insert(syslog, "[system_log]");
+
+                            logs.LogWriter("Scan GS1 ID Carton " + tbCarton2.Text + " Batchnumber " + tbBatchnumber2.Text + " Status Success");
+
                         }
                         else
                         {
 
-                            MessageBox.Show("Can't Connect to Database");
+                            MessageBox.Show("Cant Connect to Database Server");
 
                         }
-
                     }
                     else
                     {
-
-                        MessageBox.Show("Can't Connect to Database");
+                        MessageBox.Show("Cant Connect to Database Server");
                     }
-
 
 
 
@@ -789,24 +697,11 @@ namespace Biocov
 
         private void button4_Click(object sender, EventArgs e)
         {
-            tbCarton2.Text = "";
-            tbCarton2.Enabled = false;
-            cbProduct2.SelectedIndex = 0;
-            cbProduct2.Enabled = false;
-            tbBatchnumber2.Text = "";
-            istart2 = false;
-            tbBatchnumber2.Enabled = false;
-            table2.Rows.Clear();
-            lblQtyBatch2.Text = "";
-            dataGridView2.DataSource = table2;
-            lblQty2.Text = "";
-            lblPass2.Text = "";
-            lblFail2.Text = "";
-            btnLog2.Enabled = true;
+
 
         }
 
-        private void CartonValidation_FormClosing(object sender, FormClosingEventArgs e)
+        private void Manual_FormClosing(object sender, FormClosingEventArgs e)
         {
             _rawinput.KeyPressed -= OnKeyPressed;   
 
@@ -814,14 +709,10 @@ namespace Biocov
 
         private void btnLog_Click(object sender, EventArgs e)
         {
-            Log log = new Log("Log Carton Validation",validationLog);
-            log.Show();
         }
 
         private void btnLog2_Click(object sender, EventArgs e)
         {
-            Log log = new Log("Log Carton Validation", validationLog2);
-            log.Show();
         }
 
         private void splitContainer3_Panel2_Paint(object sender, PaintEventArgs e)
@@ -880,6 +771,263 @@ namespace Biocov
         private void tbBatchnumber2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Manual_FormClosed_1(object sender, FormClosedEventArgs e)
+        {
+            _rawinput.KeyPressed -= OnKeyPressed;   
+            Application.Exit();
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToLongTimeString();
+            lblDate.Text = DateTime.Now.ToShortDateString();
+        }
+
+        public void getPO(string batchnumber)
+        {
+
+            List<string> field = new List<string>();
+            field.Add("a.expired,a.productmodelid");
+            List<string[]> dss = db.selectList(field, "[packaging_order]  a inner join [product_model] b ON a.productModelId = b.product_model ", "batchNumber ='" + batchnumber + "'");
+
+            if (db.num_rows > 0)
+            {
+                foreach (string[] Row in dss)
+                {
+                    expired = Row[0];
+                    productmodelid = Row[1];
+           }
+            }
+            else
+            {
+
+                logs.LogWriter("SQL Error Cannot Get Packaging Order data");
+            }
+        }
+
+        private void tbBatchnumber1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbBatchnumber1_Click(object sender, EventArgs e)
+        {
+            using (var listbatch = new ListBatch("('" + cbProduct1.SelectedValue.ToString() + "')"))
+            {
+                var result = listbatch.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    bnumber = listbatch.batchNumber;
+                    tbBatchnumber1.Text = listbatch.batchNumber;
+                    btStart1.Enabled = true;
+                    lblQtyBatch1.Text = db.selectCountPass(bnumber).ToString();
+                    getPO(bnumber);
+
+
+                }
+            }
+        }
+
+        private void btStart1_Click(object sender, EventArgs e)
+        {
+            if (cbProduct1.SelectedIndex > 0)
+            {
+
+                if (tbBatchnumber1.Text.Length > 0)
+                {
+                    cbProduct1.Enabled = false;
+                    tbBatchnumber1.Enabled = false;
+                    btStart1.Enabled = false;
+                    btEnd1.Enabled = true;
+                    isstart = true;
+                    btnLog.Enabled = false;
+
+                }
+                else
+                {
+                    MessageBox.Show("Silahkan Pilih Kolom Batch");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Silahkan Pilih Kolom Produk");
+            }
+        }
+
+        private void btEnd1_Click(object sender, EventArgs e)
+        {
+            tbCarton1.Text = "";
+            tbCarton1.Enabled = false;
+            btStart1.Enabled = false;
+            cbProduct1.Enabled = true;
+            cbProduct1.SelectedIndex = 0;
+            tbBatchnumber1.Text = "";
+            tbBatchnumber1.Enabled = false;
+            table.Rows.Clear();
+            dataGridView1.DataSource = table;
+            isstart = false;
+            btnLog.Enabled = true;
+            lblQty1.Text = "";
+            lblQtyBatch1.Text = "";
+            lblPass1.Text = "";
+            lblFail1.Text = "";
+        }
+
+        private void dataGridView1_RowPrePaint_1(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            if (dataGridView1.Rows.Count > 1)
+            {
+                try
+                {
+                    if (dataGridView1[1, e.RowIndex].Value.ToString() == "FAIL")
+                    {
+                        dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Red;
+
+                    }
+                }
+                catch (NullReferenceException ex)
+                {
+                    Console.WriteLine(ex);
+                }
+            }
+        }
+
+        private void cbProduct2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbBatchnumber2.Enabled = true;
+            List<string> field = new List<string>();
+            field.Add("isSas");
+            try
+            {
+                List<string[]> sas = db.selectList(field, "product_model", "product_model='" + cbProduct2.SelectedValue.ToString() + "'");
+                if (db.num_rows > 0)
+                {
+                    foreach (string[] Row in sas)
+                    {
+                        Console.WriteLine(Row[0]);
+                        if (Row[0] == "True")
+                        {
+                            isSas2 = true;
+                        }
+                        else
+                        {
+                            isSas2 = false;
+                        }
+                    }
+                }
+            }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
+        private void tbBatchnumber2_Click(object sender, EventArgs e)
+        {
+            using (var listbatch = new ListBatch("('" + cbProduct2.SelectedValue.ToString() + "')"))
+            {
+                var result = listbatch.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    bnumber2 = listbatch.batchNumber;
+                    tbBatchnumber2.Text = listbatch.batchNumber;
+                    btStart2.Enabled = true;
+                    getPO(bnumber2);
+                    lblQtyBatch2.Text = db.selectCountPass(bnumber2).ToString();
+
+                }
+            }
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            Dashboard dbd = new Dashboard();
+            dbd.lblRole.Text = lblRole.Text;
+            dbd.lblUserId.Text = lblUserId.Text;
+            dbd.adminid = adminid;
+            _rawinput.KeyPressed -= OnKeyPressed;
+            _rawinput.RemoveMessageFilter();
+            dbd.Show();
+            this.Hide();
+        }
+
+        private void btEnd2_Click(object sender, EventArgs e)
+        {
+            tbCarton2.Text = "";
+            tbCarton2.Enabled = false;
+            cbProduct2.SelectedIndex = 0;
+            cbProduct2.Enabled = true;
+            tbBatchnumber2.Text = "";
+            istart2 = false;
+            tbBatchnumber2.Enabled = false;
+            table2.Rows.Clear();
+            lblQtyBatch2.Text = "";
+            dataGridView2.DataSource = table2;
+            lblQty2.Text = "";
+            lblPass2.Text = "";
+            lblFail2.Text = "";
+            btnLog2.Enabled = true;
+        }
+
+        private void btnLog_Click_1(object sender, EventArgs e)
+        {
+            Log log = new Log("Log Carton Validation", validationLog);
+            log.Show();
+
+        }
+
+        private void btnLog2_Click_1(object sender, EventArgs e)
+        {
+            Log log = new Log("Log Carton Validation", validationLog2);
+            log.Show();
+
+        }
+
+        private void btStart2_Click(object sender, EventArgs e)
+        {
+            if (cbProduct2.SelectedIndex > 0)
+            {
+
+                if (tbBatchnumber2.Text.Length > 0)
+                {
+                    cbProduct2.Enabled = false;
+                    tbBatchnumber2.Enabled = false;
+                    btStart2.Enabled = false;
+                    btEnd2.Enabled = true;
+                    istart2 = true;
+                    btnLog2.Enabled = false;
+
+                }
+                else
+                {
+                    MessageBox.Show("Silahkan Pilih Kolom Batch");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Silahkan Pilih Kolom Produk");
+            }
+        }
+
+        private void dataGridView2_RowPrePaint_1(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            if (dataGridView2.Rows.Count > 1)
+            {
+                try
+                {
+                    if (dataGridView2[1, e.RowIndex].Value.ToString() == "FAIL")
+                    {
+                        dataGridView2.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Red;
+
+                    }
+                }
+                catch (NullReferenceException ex)
+                {
+                    Console.WriteLine(ex);
+                }
+            }
         }
     }
 

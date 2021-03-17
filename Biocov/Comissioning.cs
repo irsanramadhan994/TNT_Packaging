@@ -204,7 +204,7 @@ namespace Biocov
 
             List<string> field = new List<string>();
             field.Add("gsonevialid 'GS1 Vial ID'");
-            List<string[]> dss = db.selectList(field, "[vaccine_packaging]", "innerboxgsoneid='" + tbCarton.Text + "'AND batchnumber='" + bnumber + "'");
+            List<string[]> dss = db.selectList(field, "[vaccine]", "innerboxgsoneid='" + tbCarton.Text + "'AND batchnumber='" + bnumber + "'");
             if (db.num_rows > 0)
             {
                 table = db.dataHeader;
@@ -280,18 +280,18 @@ namespace Biocov
 
                 List<string> field = new List<string>();
                 field.Add("gsonevialid");
-                if (db.selectList(field, "[vaccine_packaging]", "gsonevialid='" + tbVial.Text + "' AND batchnumber='" + bnumber + "' AND isreject='1' AND flag='2'") != null)
+                if (db.selectList(field, "[vaccine]", "gsonevialid='" + tbVial.Text + "' AND batchnumber='" + bnumber + "' AND isreject='1' AND flag='2'") != null)
                 {
                     Dictionary<string, string> updatelist = new Dictionary<string, string>();
                     updatelist.Add("innerboxgsoneid", tbCarton.Text);
                     updatelist.Add("innerboxid", infeed);
                     updatelist.Add("isreject", "0");
                     updatelist.Add("flag", "0");
-                    if (db.update(updatelist, "[vaccine_packaging]", "gsonevialid='" + tbVial.Text + "' AND batchnumber='" + bnumber + "'") > 0)
+                    if (db.update(updatelist, "[vaccine]", "gsonevialid='" + tbVial.Text + "' AND batchnumber='" + bnumber + "'") > 0)
                     {
                         table.Rows.Clear();
 
-                        List<string[]> dss = db.selectList(field, "[vaccine_packaging]", "innerboxgsoneid='" + tbCarton.Text + "'AND batchnumber='" + bnumber + "'");
+                        List<string[]> dss = db.selectList(field, "[vaccine]", "innerboxgsoneid='" + tbCarton.Text + "'AND batchnumber='" + bnumber + "'");
                         if (db.num_rows > 0)
                         {
 

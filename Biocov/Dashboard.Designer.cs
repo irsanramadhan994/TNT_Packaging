@@ -44,6 +44,7 @@
             this.pbValidasi = new System.Windows.Forms.Button();
             this.pbGenerateCode = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.Receh = new System.Windows.Forms.Button();
             this.pbCommision = new System.Windows.Forms.Button();
             this.pbAggregation = new System.Windows.Forms.Button();
@@ -139,7 +140,7 @@
             this.pnlDashboard.Controls.Add(this.avatar);
             this.pnlDashboard.Location = new System.Drawing.Point(205, 0);
             this.pnlDashboard.Name = "pnlDashboard";
-            this.pnlDashboard.Size = new System.Drawing.Size(808, 125);
+            this.pnlDashboard.Size = new System.Drawing.Size(808, 134);
             this.pnlDashboard.TabIndex = 8;
             this.pnlDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDashboard_Paint);
             // 
@@ -177,7 +178,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(281, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 31);
+            this.label1.Size = new System.Drawing.Size(156, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dashboard";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -187,7 +188,7 @@
             // 
             this.avatar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.avatar.Image = global::Biocov.Properties.Resources.user;
-            this.avatar.Location = new System.Drawing.Point(628, 28);
+            this.avatar.Location = new System.Drawing.Point(628, 33);
             this.avatar.Name = "avatar";
             this.avatar.Size = new System.Drawing.Size(58, 49);
             this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -201,9 +202,9 @@
             this.pbValidasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pbValidasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pbValidasi.ForeColor = System.Drawing.Color.Snow;
-            this.pbValidasi.Location = new System.Drawing.Point(2, 212);
+            this.pbValidasi.Location = new System.Drawing.Point(2, 191);
             this.pbValidasi.Name = "pbValidasi";
-            this.pbValidasi.Size = new System.Drawing.Size(199, 83);
+            this.pbValidasi.Size = new System.Drawing.Size(199, 65);
             this.pbValidasi.TabIndex = 3;
             this.pbValidasi.Text = "Carton Validation";
             this.pbValidasi.UseVisualStyleBackColor = false;
@@ -218,7 +219,7 @@
             this.pbGenerateCode.ForeColor = System.Drawing.Color.Snow;
             this.pbGenerateCode.Location = new System.Drawing.Point(2, 126);
             this.pbGenerateCode.Name = "pbGenerateCode";
-            this.pbGenerateCode.Size = new System.Drawing.Size(199, 83);
+            this.pbGenerateCode.Size = new System.Drawing.Size(199, 65);
             this.pbGenerateCode.TabIndex = 2;
             this.pbGenerateCode.Text = "Serialization GS1 ID Carton\r\n";
             this.pbGenerateCode.UseVisualStyleBackColor = false;
@@ -228,6 +229,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.Receh);
             this.panel1.Controls.Add(this.pbCommision);
             this.panel1.Controls.Add(this.pbAggregation);
@@ -241,6 +243,21 @@
             this.panel1.Size = new System.Drawing.Size(202, 749);
             this.panel1.TabIndex = 7;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
+            this.button1.CausesValidation = false;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Snow;
+            this.button1.Location = new System.Drawing.Point(1, 584);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(199, 65);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Manual";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Receh
             // 
             this.Receh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
@@ -248,9 +265,9 @@
             this.Receh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Receh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Receh.ForeColor = System.Drawing.Color.Snow;
-            this.Receh.Location = new System.Drawing.Point(0, 633);
+            this.Receh.Location = new System.Drawing.Point(1, 518);
             this.Receh.Name = "Receh";
-            this.Receh.Size = new System.Drawing.Size(199, 83);
+            this.Receh.Size = new System.Drawing.Size(199, 65);
             this.Receh.TabIndex = 12;
             this.Receh.Text = "Substraction";
             this.Receh.UseVisualStyleBackColor = false;
@@ -263,9 +280,9 @@
             this.pbCommision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pbCommision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pbCommision.ForeColor = System.Drawing.Color.Snow;
-            this.pbCommision.Location = new System.Drawing.Point(0, 465);
+            this.pbCommision.Location = new System.Drawing.Point(1, 387);
             this.pbCommision.Name = "pbCommision";
-            this.pbCommision.Size = new System.Drawing.Size(199, 83);
+            this.pbCommision.Size = new System.Drawing.Size(199, 65);
             this.pbCommision.TabIndex = 8;
             this.pbCommision.Text = "Commision";
             this.pbCommision.UseVisualStyleBackColor = false;
@@ -278,9 +295,9 @@
             this.pbAggregation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pbAggregation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pbAggregation.ForeColor = System.Drawing.Color.Snow;
-            this.pbAggregation.Location = new System.Drawing.Point(1, 297);
+            this.pbAggregation.Location = new System.Drawing.Point(2, 256);
             this.pbAggregation.Name = "pbAggregation";
-            this.pbAggregation.Size = new System.Drawing.Size(199, 83);
+            this.pbAggregation.Size = new System.Drawing.Size(199, 65);
             this.pbAggregation.TabIndex = 7;
             this.pbAggregation.Text = "Vial and Carton Agregation";
             this.pbAggregation.UseVisualStyleBackColor = false;
@@ -293,9 +310,9 @@
             this.pbDecomision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pbDecomision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pbDecomision.ForeColor = System.Drawing.Color.Snow;
-            this.pbDecomision.Location = new System.Drawing.Point(0, 381);
+            this.pbDecomision.Location = new System.Drawing.Point(2, 322);
             this.pbDecomision.Name = "pbDecomision";
-            this.pbDecomision.Size = new System.Drawing.Size(199, 83);
+            this.pbDecomision.Size = new System.Drawing.Size(199, 65);
             this.pbDecomision.TabIndex = 6;
             this.pbDecomision.Text = "Decomision";
             this.pbDecomision.UseVisualStyleBackColor = false;
@@ -319,9 +336,9 @@
             this.pbConfiguration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pbConfiguration.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pbConfiguration.ForeColor = System.Drawing.Color.Snow;
-            this.pbConfiguration.Location = new System.Drawing.Point(0, 549);
+            this.pbConfiguration.Location = new System.Drawing.Point(2, 452);
             this.pbConfiguration.Name = "pbConfiguration";
-            this.pbConfiguration.Size = new System.Drawing.Size(199, 83);
+            this.pbConfiguration.Size = new System.Drawing.Size(199, 65);
             this.pbConfiguration.TabIndex = 5;
             this.pbConfiguration.Text = "Configuration";
             this.pbConfiguration.UseVisualStyleBackColor = false;
@@ -335,7 +352,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 746);
+            this.ClientSize = new System.Drawing.Size(1014, 755);
             this.Controls.Add(this.lblOpenedBatch);
             this.Controls.Add(this.pnlBiocov);
             this.Controls.Add(this.pnlDashboard);
@@ -385,6 +402,7 @@
         private System.Windows.Forms.Button pbAggregation;
         private System.Windows.Forms.Button pbCommision;
         private System.Windows.Forms.Button Receh;
+        private System.Windows.Forms.Button button1;
 
     }
 }

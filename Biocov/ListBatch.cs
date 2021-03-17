@@ -36,7 +36,7 @@ namespace Biocov
             if (product == "")
             {
                 field.Add("a.batchNumber 'Batch Number', b.model_name 'Product', a.packagingQty 'Qty', COUNT(c.id) as 'Actual Qty', a.startdate 'Start Date', a.enddate 'End Date'");
-                List<string[]> dss = database.selectList(field, "[packaging_order] a inner join [product_model] b on a.productModelId = b.product_model left outer join [vaccine_packaging] c on c.batchNumber = a.batchNumber ", "a.status = 1 group by a.batchNumber, b.model_name, a.packagingQty, a.startdate, a.enddate, a.packagingOrderNumber order by a.packagingOrderNumber desc");
+                List<string[]> dss = database.selectList(field, "[packaging_order] a inner join [product_model] b on a.productModelId = b.product_model left outer join [vaccine] c on c.batchNumber = a.batchNumber ", "a.status = 1 group by a.batchNumber, b.model_name, a.packagingQty, a.startdate, a.enddate, a.packagingOrderNumber order by a.packagingOrderNumber desc");
                 if (database.num_rows > 0)
                 {
                     table = database.dataHeader;

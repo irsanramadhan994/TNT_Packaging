@@ -308,9 +308,9 @@ namespace Biocov
 
             try
             {
-                Console.WriteLine("UPDATE [vaccine_packaging] set innerboxgsoneid='" + gsoneinnerboxid + "', innerboxid='" + infeed + "' , isReject = 0,  flag = 0 where gsOneVialId in (" + aggregationWhere + ")");
+                Console.WriteLine("UPDATE [vaccine] set innerboxgsoneid='" + gsoneinnerboxid + "', innerboxid='" + infeed + "' , isReject = 0,  flag = 0 where gsOneVialId in (" + aggregationWhere + ")");
                 Command.CommandText =
-                    "UPDATE [vaccine_packaging] set innerboxgsoneid='" + gsoneinnerboxid + "', innerboxid='" + infeed + "' , isReject = 0,  flag = 0 where gsOneVialId in (" + aggregationWhere + ")";
+                    "UPDATE [vaccine] set innerboxgsoneid='" + gsoneinnerboxid + "', innerboxid='" + infeed + "' , isReject = 0,  flag = 0 where gsOneVialId in (" + aggregationWhere + ")";
                 Command.ExecuteNonQuery();
                 Command.CommandText =
                     "  update innerBox set isReject = 0, flag = 0 where gsOneInnerBoxId = '"+gsoneinnerboxid+"'";
@@ -370,7 +370,7 @@ namespace Biocov
 
             try {
 
-                string sql = "INSERT INTO vaccine_packaging (batchnumber,innerboxgsoneid,innerboxid,createdtime,isreject,flag,expdate,productmodelid) SELECT batchnumber,gsoneinnerboxid,infeedinnerboxid,createdtime,isreject,flag,'" + expdate + "','" + productmodelid + "' FROM innerbox where gsoneinnerboxid='" + innerboxgsoneid + "'";
+                string sql = "INSERT INTO vaccine (batchnumber,innerboxgsoneid,innerboxid,createdtime,isreject,flag,expdate,productmodelid) SELECT batchnumber,gsoneinnerboxid,infeedinnerboxid,createdtime,isreject,flag,'" + expdate + "','" + productmodelid + "' FROM innerbox where gsoneinnerboxid='" + innerboxgsoneid + "'";
 
                 if (OpenConnection())
                 {

@@ -140,3 +140,4 @@ C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Properties.Resources.resources
 C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.csproj.GenerateResource.Cache
 C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.exe.manifest
 C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.application
+C:\Program Files\Biocov\Biocov\obj\Debug\Biocov.Manual.resources
