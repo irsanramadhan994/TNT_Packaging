@@ -130,7 +130,7 @@ namespace Biocov
                         field.Add("gsoneinnerboxid", gs1dCartonList[i]);
                         field.Add("isreject", "1");
 
-                        if (!PingHost(config["ipprinter"]) || !PingHost(config["ipprinter2"]) || !PingHost(config["ipprinter3"]))
+                        if (PingHost(config["ipprinter"]) || PingHost(config["ipprinter2"]) || PingHost(config["ipprinter3"]))
                    {
                        if (isSas)
                        {
@@ -148,9 +148,9 @@ namespace Biocov
                                        switch (j)
                                        {
                                            case 0:
-                                               if (!PingHost(config["ipprinter"]))
+                                               if (PingHost(config["ipprinter"]))
                                                {
-                                                   //printer.PrintSas(gtinoutbox, gs1dCartonList[i].Substring(Math.Max(0, gs1dCartonList[i].Length - 14)), bnumber, expired, labelSas, gs1dCartonList[i], config["ipprinter"], config["portprinter"]);
+                                                   printer.PrintSas(gtinoutbox, gs1dCartonList[i].Substring(Math.Max(0, gs1dCartonList[i].Length - 14)), bnumber, expired, labelSas, gs1dCartonList[i], config["ipprinter"], config["portprinter"]);
                                                    j = 0;
                                                    printed++;
                                                    k++;
@@ -163,9 +163,9 @@ namespace Biocov
                                                }
                                                break;
                                            case 1:
-                                               if (!PingHost(config["ipprinter2"]))
+                                               if (PingHost(config["ipprinter2"]))
                                                {
-                                                   //printer.PrintSas(gtinoutbox, gs1dCartonList[i].Substring(Math.Max(0, gs1dCartonList[i].Length - 14)), bnumber, expired,labelSas, gs1dCartonList[i], config["ipprinter2"], config["portprinter2"]);
+                                                   printer.PrintSas(gtinoutbox, gs1dCartonList[i].Substring(Math.Max(0, gs1dCartonList[i].Length - 14)), bnumber, expired, labelSas, gs1dCartonList[i], config["ipprinter2"], config["portprinter2"]);
                                                    j = 1;
                                                    printed++;
                                                    k++;
@@ -178,9 +178,9 @@ namespace Biocov
                                                }
                                                break;
                                            case 2:
-                                               if (!PingHost(config["ipprinter3"]))
+                                               if (PingHost(config["ipprinter3"]))
                                                {
-                                                   //printer.PrintSas(gtinoutbox, gs1dCartonList[i].Substring(Math.Max(0, gs1dCartonList[i].Length - 14)), bnumber, expired,labelSas, gs1dCartonList[i], config["ipprinter3"], config["portprinter3"]);
+                                                   printer.PrintSas(gtinoutbox, gs1dCartonList[i].Substring(Math.Max(0, gs1dCartonList[i].Length - 14)), bnumber, expired, labelSas, gs1dCartonList[i], config["ipprinter3"], config["portprinter3"]);
                                                    j = 2;
                                                    printed++;
                                                    k++;
@@ -227,7 +227,7 @@ namespace Biocov
                                        switch (j)
                                        {
                                            case 0:
-                                               if (!PingHost(config["ipprinter"]))
+                                               if (PingHost(config["ipprinter"]))
                                                {
                                                    printer.Print(gtinoutbox, gs1dCartonList[i].Substring(Math.Max(0, gs1dCartonList[i].Length - 14)), bnumber, expired, createddate,gs1dCartonList[i], config["ipprinter"], config["portprinter"],nie);
                                                    j = 0;
@@ -243,7 +243,7 @@ namespace Biocov
                                                }
                                                break;
                                            case 1:
-                                               if (!PingHost(config["ipprinter2"]))
+                                               if (PingHost(config["ipprinter2"]))
                                                {
                                                    printer.Print(gtinoutbox, gs1dCartonList[i].Substring(Math.Max(0, gs1dCartonList[i].Length - 14)), bnumber, expired,createddate, gs1dCartonList[i], config["ipprinter2"], config["portprinter2"],nie);
                                                    j = 1;
@@ -259,7 +259,7 @@ namespace Biocov
                                                }
                                                break;
                                            case 2:
-                                               if (!PingHost(config["ipprinter3"]))
+                                               if (PingHost(config["ipprinter3"]))
                                                {
                                                    printer.Print(gtinoutbox, gs1dCartonList[i].Substring(Math.Max(0, gs1dCartonList[i].Length - 14)), bnumber, expired,createddate, gs1dCartonList[i], config["ipprinter3"], config["portprinter3"],nie);
                                                    j = 2;

@@ -187,8 +187,7 @@ namespace Biocov
 
         private void Login_Load(object sender, EventArgs e)
         {
-            var gs1 = "010500045606612921A00000000187891721053110CTMAV504";
-            MessageBox.Show(gs1.Contains("CTMAV504").ToString());
+
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
