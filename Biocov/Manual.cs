@@ -304,9 +304,8 @@ namespace Biocov
 
                 if (isSas)
                 {
-                    if (db.insert(fieldvaccine, "[innerbox]"))
-                    {
-                        if (db.insertSelect(expired, tbCarton1.Text, productmodelid))
+
+                        if (db.insertManual(tbBatchnumber1.Text,tbCarton1.Text,expired,productmodelid))
                         {
 
                             DataRow row = table.NewRow();
@@ -335,11 +334,7 @@ namespace Biocov
                             MessageBox.Show("Cant Connect to Database Server");
 
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Cant Connect to Database Server");
-                    }
+  
 
 
 

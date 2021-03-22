@@ -149,15 +149,21 @@ namespace Biocov
 
                 if (e.KeyPressEvent.VKeyName == "ENTER" && e.KeyPressEvent.KeyPressState == "MAKE" && (e.KeyPressEvent.DeviceName.Contains(hidscanner.ToLower()) || e.KeyPressEvent.DeviceName.Contains(hidscanner2.ToLower())) && !cartonvalidated && isStart)
                 {
-                    tbCarton2.Text = gs1carton1;
-                    cartonValidation();
+                    if (tab.SelectedTab.Text != "Manual") {
+                        tbCarton2.Text = gs1carton1;
+                        cartonValidation();
 
+
+                    }
                 }
 
                 if (e.KeyPressEvent.VKeyName == "ENTER" && e.KeyPressEvent.KeyPressState == "MAKE" && (e.KeyPressEvent.DeviceName.Contains(hidscanner.ToLower()) || e.KeyPressEvent.DeviceName.Contains(hidscanner2.ToLower())) && cartonvalidated && isStart)
                 {
-                    tbVial1.Text = gs1idvial1;
-                    vialDecommision();
+                    if (tab.SelectedTab.Text != "Manual") {
+                        tbVial1.Text = gs1idvial1;
+                        vialDecommision();
+
+                    }
                 }
             
             }
@@ -208,8 +214,10 @@ namespace Biocov
         {
             _rawinput.KeyPressed += OnKeyPressed;
             tbBatchnumber.Enabled = false;
+            tbManual.Enabled = false;
             tbCarton.Enabled = false;
             tbCarton2.Enabled = false;
+            btEndManual.Enabled = false;
             dataGridView1.Enabled = false;
             dataGridView4.Enabled = false;
             btEnd.Enabled = false;
@@ -642,10 +650,12 @@ namespace Biocov
 
         private void button1_Click_2(object sender, EventArgs e)
         {
+            btEndManual.Enabled = true;
             tbBatchnumber.Enabled = false;
             cbProduct.Enabled = false;
             btStart.Enabled = false;
             btEnd.Enabled = true;
+            tbManual.Enabled = true;
             btEnd1.Enabled = true;
             isStart = true;
         }
@@ -666,6 +676,41 @@ namespace Biocov
             timer2.Stop();
             AutoClosingMessageBox.Show(notifMessage, notifCaption, 1500);
 
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyValue == 13 && tbManual.Text != "")
+            {
+                if (db.deleteManual(bnumber,tbManual.Text))
+                {
+                   
+                        MessageBox.Show("Decommision Success");
+                        tbManual.Text = "";
+                        tbManual.Focus();
+
+                }
+                else {
+                    MessageBox.Show("Decommision Failed!");
+                }
+            }
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            isStart = false;
+            cbProduct.SelectedIndex = 0;
+            cbProduct.Enabled = true;
+            tbBatchnumber.Enabled = false;
+            tbBatchnumber.Text = "";
+            tbManual.Text = "";
+            tbManual.Enabled = false;
+            btEndManual.Enabled = false;
         }
 
      

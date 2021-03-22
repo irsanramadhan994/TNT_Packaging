@@ -37746,3 +37746,258 @@ Log Entry : 10:19:50 18 March 2021
    at System.Data.SqlClient.SqlConnection.Open()
    at Biocov.db.OpenConnection() in C:\Program Files\Biocov\Biocov\db.cs:line 252
 -------------------------------
+
+Log Entry : 09:28:26 19 March 2021
+  :
+  :System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, SqlConnection owningObject, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Biocov.db.OpenConnection() in C:\Program Files\Biocov\Biocov\db.cs:line 252
+-------------------------------
+
+Log Entry : 09:46:35 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000178481721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 09:46:40 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000178481721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 09:47:02 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000193641721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 09:47:11 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000172091721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 09:47:21 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187651721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 09:47:31 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000165661721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 09:47:43 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000193641721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 09:48:31 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000175031721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 09:48:45 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000166411721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 09:49:39 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000183331721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 09:49:46 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000174881721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 09:49:55 19 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000166671721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 11:16:49 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000181001721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 11:49:04 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000180891721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 11:50:05 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000180891721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 11:52:48 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000170531721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 12:49:05 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000179161721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:49:46 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000179161721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:52:23 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000172401721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:53:37 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000177991721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:53:54 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000172321721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:54:12 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000168481721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:54:22 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000166771721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:54:32 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000181521721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:54:46 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000194941721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:54:59 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000183391721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:55:15 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000178271721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:55:24 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000194761721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:55:31 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000168871721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:55:38 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000178871721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 12:55:50 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000171061721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 13:11:40 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000195431721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 13:11:54 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000195431721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 13:13:52 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000174841721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 13:14:02 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000174841721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 13:16:09 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000178471721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 13:21:05 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187291721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 19:33:40 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 19:36:03 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000187891721053110CTMAV504 Batchnumber CTMAV504 Status Fail
+-------------------------------
+
+Log Entry : 19:37:01 20 March 2021
+  :
+  :System.Data.SqlClient.SqlException: Invalid object name 'iiiiiiinnerbox'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Biocov.db.insert(Dictionary`2 field, String table) in C:\Program Files\Biocov\Biocov\db.cs:line 626
+-------------------------------
+
+Log Entry : 21:30:23 20 March 2021
+  :
+  :Scan GS1 ID Carton 010500045606612921A00000000178481721053110CTMAV504 Batchnumber CTMAV504 Status Success
+-------------------------------
+
+Log Entry : 21:39:35 20 March 2021
+  :
+  :System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, SqlConnection owningObject, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Biocov.db.OpenConnection() in C:\Program Files\Biocov\Biocov\db.cs:line 252
+-------------------------------

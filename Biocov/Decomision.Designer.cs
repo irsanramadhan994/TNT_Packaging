@@ -87,6 +87,10 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btEndManual = new System.Windows.Forms.Button();
+            this.tbManual = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.tab.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -110,6 +114,7 @@
             this.tableLayoutPanel6.SuspendLayout();
             this.pnlDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblProduk
@@ -175,6 +180,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.tab.Controls.Add(this.tabPage1);
             this.tab.Controls.Add(this.tabPage2);
+            this.tab.Controls.Add(this.tabPage5);
             this.tab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab.Location = new System.Drawing.Point(117, 132);
             this.tab.Name = "tab";
@@ -803,6 +809,47 @@
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label9);
+            this.tabPage5.Controls.Add(this.tbManual);
+            this.tabPage5.Controls.Add(this.btEndManual);
+            this.tabPage5.Location = new System.Drawing.Point(4, 29);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(979, 500);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "Manual";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // btEndManual
+            // 
+            this.btEndManual.Location = new System.Drawing.Point(151, 128);
+            this.btEndManual.Name = "btEndManual";
+            this.btEndManual.Size = new System.Drawing.Size(119, 31);
+            this.btEndManual.TabIndex = 0;
+            this.btEndManual.Text = "End Session";
+            this.btEndManual.UseVisualStyleBackColor = true;
+            this.btEndManual.Click += new System.EventHandler(this.button1_Click_3);
+            // 
+            // tbManual
+            // 
+            this.tbManual.Location = new System.Drawing.Point(153, 61);
+            this.tbManual.Name = "tbManual";
+            this.tbManual.Size = new System.Drawing.Size(463, 26);
+            this.tbManual.TabIndex = 1;
+            this.tbManual.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 64);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(123, 20);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "GS1 MANUAL";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // Decomision
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -851,6 +898,8 @@
             this.pnlDashboard.ResumeLayout(false);
             this.pnlDashboard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -914,6 +963,10 @@
         private System.Windows.Forms.Button btEnd;
         private System.Windows.Forms.Button btStart;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tbManual;
+        private System.Windows.Forms.Button btEndManual;
 
 
     }

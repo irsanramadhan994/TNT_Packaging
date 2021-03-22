@@ -422,7 +422,149 @@ namespace Biocov
             }
 
             return false;
-        } 
+        }
+
+
+        public bool insertManual(string batchnumber, string gsoneinnerboxid,string expired,string productmodel)
+        {
+            OpenConnection();
+            Command = Connection.CreateCommand();
+            SqlTransaction transaction;
+            transaction = Connection.BeginTransaction("insertManual");
+
+            Command.Connection = Connection;
+            Command.Transaction = transaction;
+
+            try
+            {
+                Command.CommandText =
+                    "insert  into [innerbox] (batchnumber,flag,isreject,gsoneinnerboxid) VALUES ('"+batchnumber+"','0','0','"+gsoneinnerboxid+"') ";
+                Command.ExecuteNonQuery();
+                Command.CommandText =
+                    "INSERT INTO vaccine (batchnumber,innerboxgsoneid,innerboxid,createdtime,isreject,flag,expdate,productmodelid) SELECT batchnumber,gsoneinnerboxid,infeedinnerboxid,createdtime,isreject,flag,'" + expired + "','" + productmodel + "' FROM innerbox where gsoneinnerboxid='" + gsoneinnerboxid + "'";
+                Command.ExecuteNonQuery();
+
+                transaction.Commit();
+
+                return true;
+            }
+
+
+
+
+            catch (Exception ex)
+            {
+                log.LogWriter("Error SQLSERVER : Commit Exception Type: {0}" + ex.GetType());
+                log.LogWriter("Error SQLSERVER : Message: {0}" + ex.Message);
+                // Attempt to roll back the transaction.
+                try
+                {
+                    transaction.Rollback();
+                }
+                catch (Exception ex2)
+                {
+                    // This catch block will handle any errors that may have occurred
+                    // on the server that would cause the rollback to fail, such as
+                    // a closed connection.
+                    log.LogWriter("Error SQLSERVER : Rollback Exception Type: {0}" + ex2.GetType());
+                    log.LogWriter("Error SQLSERVER : Message: {0}" + ex2.Message);
+                }
+
+            }
+            finally
+            {
+                try
+                {
+                    //DataReader.Close();
+                    Command.Dispose();
+                    Connection.Close();
+                }
+                catch (SqlException sq)
+                {
+                    log.LogWriter(sq.ToString());
+
+                }
+                catch (NullReferenceException nl)
+                {
+                    log.LogWriter(nl.ToString());
+
+                }
+
+            }
+            return false;
+        }
+
+        public bool deleteManual(string batchnumber, string gsoneinnerboxid)
+        {
+            OpenConnection();
+            Command = Connection.CreateCommand();
+            SqlTransaction transaction;
+            transaction = Connection.BeginTransaction("insertManual");
+
+            Command.Connection = Connection;
+            Command.Transaction = transaction;
+
+            try
+            {
+                Command.CommandText =
+                    "DELETE  FROM [innerbox] WHERE gsoneinnerboxid='"+gsoneinnerboxid+"' AND batchnumber='"+batchnumber+"'";
+                Command.ExecuteNonQuery();
+                Command.CommandText =
+                    "DELETE  FROM [vaccine] WHERE innerboxgsoneid='" + gsoneinnerboxid + "' AND batchnumber='" + batchnumber + "'";
+                Command.ExecuteNonQuery();
+
+                transaction.Commit();
+
+                return true;
+            }
+
+
+
+
+            catch (Exception ex)
+            {
+                log.LogWriter("Error SQLSERVER : Commit Exception Type: {0}" + ex.GetType());
+                log.LogWriter("Error SQLSERVER : Message: {0}" + ex.Message);
+                // Attempt to roll back the transaction.
+                try
+                {
+                    transaction.Rollback();
+                }
+                catch (Exception ex2)
+                {
+                    // This catch block will handle any errors that may have occurred
+                    // on the server that would cause the rollback to fail, such as
+                    // a closed connection.
+                    log.LogWriter("Error SQLSERVER : Rollback Exception Type: {0}" + ex2.GetType());
+                    log.LogWriter("Error SQLSERVER : Message: {0}" + ex2.Message);
+                }
+
+            }
+            finally
+            {
+                try
+                {
+                    //DataReader.Close();
+                    Command.Dispose();
+                    Connection.Close();
+                }
+                catch (SqlException sq)
+                {
+                    log.LogWriter(sq.ToString());
+
+                }
+                catch (NullReferenceException nl)
+                {
+                    log.LogWriter(nl.ToString());
+
+                }
+
+            }
+            return false;
+        }
+
+
+
 
 
         public List<String[]> selectList(List<string> field, string table, string where)

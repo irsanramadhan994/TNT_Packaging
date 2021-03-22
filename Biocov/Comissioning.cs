@@ -81,6 +81,7 @@ namespace Biocov
 
             if (e.KeyPressEvent.VKeyName == "ENTER" && e.KeyPressEvent.KeyPressState == "MAKE" && (e.KeyPressEvent.DeviceName.Contains(hidscanner.ToLower()) || e.KeyPressEvent.DeviceName.Contains(hidscanner2.ToLower())) && cartonvalidated && isStart && gs1vial1!= null)
             {
+                
                 tbVial.Text = gs1vial1;
                 vialCommision();
             }
